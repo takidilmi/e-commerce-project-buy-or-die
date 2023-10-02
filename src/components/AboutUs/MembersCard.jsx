@@ -1,12 +1,13 @@
 import React from "react"
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
 import styles from "@/styles/HomeCards.module.css"
+import Image from "next/image"
 
 export default function MembersCard() {
   const posts = [
     {
       title: "TakiEddine Dilmi",
-      img: "https://media.licdn.com/dms/image/D4D03AQERAzrnbwjq8w/profile-displayphoto-shrink_800_800/0/1693681934375?e=1701302400&v=beta&t=U7XyyRoAVDwFcKjftLHwmE51KuuFxXxwvmTaDBf3RV0",
+      img: "https://avatars.githubusercontent.com/u/137835769?v=4",
       githubLink: "https://github.com/takidilmi",
       linkedinLink: "https://www.linkedin.com/in/takidilmi/",
       emailLink: "angeldilmi@gmail.com",
@@ -15,7 +16,7 @@ export default function MembersCard() {
     },
     {
       title: "Walid Belharazem",
-      img: "https://media.licdn.com/dms/image/D4D03AQG8mC0NMyT_ZQ/profile-displayphoto-shrink_400_400/0/1694126017760?e=1701302400&v=beta&t=qA54tdWehyU22L8T-1GiRcM6QKvbIKp85-F-j9aj8Ic",
+      img: "https://avatars.githubusercontent.com/u/138311484?v=4",
       githubLink: "https://github.com/walidbelharazem",
       linkedinLink: "https://www.linkedin.com/in/walid-t-belharazem/",
       emailLink: "walidbelharazem@gmail.com ",
@@ -24,7 +25,7 @@ export default function MembersCard() {
     },
     {
       title: "Mounia Belkheir",
-      img: "https://media.licdn.com/dms/image/D5603AQFr-Tgy8kBXnA/profile-displayphoto-shrink_800_800/0/1695934815948?e=1701302400&v=beta&t=STSjdz8_S8DIgxYyh4gvcKCbivaj1V9nkXtswDKeo7s",
+      img: "/m1695934815948.jpeg",
       githubLink: "https://github.com/MouniaBelkheir",
       linkedinLink: "https://www.linkedin.com/in/mounia-belkheir-5709011b9/",
       emailLink: "mouniabelkheir@outlook.com",
@@ -33,7 +34,7 @@ export default function MembersCard() {
     },
     {
       title: "Sidahmed Slikh",
-      img: "https://media.licdn.com/dms/image/D4E03AQG1U2-fKHfQ8A/profile-displayphoto-shrink_800_800/0/1690553686343?e=1701302400&v=beta&t=b-47mFx2gkYHtQDfUGyXAvf0xCVmJg_mtGIA8vjureY",
+      img: "https://avatars.githubusercontent.com/u/136409213?v=4",
       githubLink: "https://github.com/Zino0031",
       linkedinLink: "https://www.linkedin.com/in/sidahmed-zinedine/",
       emailLink: "sidahmedzinedine@gmail.com",
@@ -51,7 +52,7 @@ export default function MembersCard() {
     },
     {
       title: "Hadil  Khenissa ",
-      img: "https://media.licdn.com/dms/image/D4D03AQGmO0WpIfQUng/profile-displayphoto-shrink_800_800/0/1692212243586?e=1701302400&v=beta&t=nPaQh4ET1XEdD4zTfoCvfCT5QhIhvfB7Y_ZaSi8TOp4",
+      img: "https://avatars.githubusercontent.com/u/121692875?v=4",
       githubLink: "https://github.com/hadilkhe",
       linkedinLink: "https://www.linkedin.com/in/hadil-khenissa/",
       emailLink: "hadil.khenissa2@gmail.com",
