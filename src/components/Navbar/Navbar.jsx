@@ -72,19 +72,13 @@ const NavBar = () => {
         }}
         className=" flex justify-between border bg-white bg-opacity-30 rounded-3xl items-center w-full"
       >
-        <div className="flex ">
-          <button className="ml-4 bg-transparent text-black rounded-full">
-            <div>
+        <div className="flex justify-between w-[200px] ">
+          <button className="bg-transparent text-black rounded-full">
+            {/* <div>
               <Cata toggleSidebar={toggleSidebar} />
-            </div>
+            </div> */}
           </button>
-          <Image
-            className="ml-20"
-            src="/Sougna_1.png"
-            alt="logo"
-            width={80}
-            height={80}
-          />
+          <Image src="/Sougna_1.png" alt="logo" width={80} height={80} />
         </div>
 
         <ul className="flex space-x-28">

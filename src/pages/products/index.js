@@ -242,7 +242,7 @@ const Products = ({ produ }) => {
                   </div>
                   {isFilterDrawerOpen && (
                     <div
-                      className="absolute mt-36 bg-white text-black z-20"
+                      className="absolute mt-36 bg-[#f5f5f5] rounded-lg text-black z-20"
                       ref={filterDrawerRef}
                     >
                       <div className="mb-4 ">

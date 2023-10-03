@@ -44,7 +44,7 @@ const RandomImages = () => {
   }, [currentImages, currentIndex, imageUrls])
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center mt-20">
       <div
         style={{
           border: "",
@@ -53,24 +53,23 @@ const RandomImages = () => {
           fontFamily: "Satoshi",
           fontWeight: 400,
           lineHeight: "22px",
-          wordWrap: "break-word",
-          width: "70%",
+          wordWrap: "break-word", //
         }}
-        className={`${styles.randomWidth} flex justify-center relative mb-40 mt-20 rounded-lg bg-[#C1DCDC]`}
+        className={`${styles.randomWidth} w-[1290px] h-[770px] rounded-xl bg-[#C1DCDC]`}
       >
-        <div className="flex flex-col relative  items-center text-13xl">
-          <div className="flex flex-col mt-5 items-center ">
-            <b className="p-3">Categories</b>
+        <div className=" flex flex-col justify-center">
+          <div className="flex flex-col items-center">
+            <b className={`${styles.catText}`}>Categories</b>
             <div
               style={{
                 color: "#405454",
                 fontSize: "30px",
                 fontFamily: "Satoshi",
                 fontWeight: 400,
-                lineHeight: "22px",
+                lineHeight: "40px",
                 wordWrap: "break-word",
               }}
-              className=" text-lg pb-20"
+              className={`${styles.catText}`}
             >
               Find what you are looking for
             </div>
@@ -78,7 +77,6 @@ const RandomImages = () => {
 
           <div
             style={{
-              height: "500px",
               borderBottomLeftRadius: "var(--br-x) var(--br-y)",
               "--br-x": "100px",
               "--br-y": "100px",
@@ -86,7 +84,7 @@ const RandomImages = () => {
             }}
           >
             <div
-              className="relative bottom-72"
+              className={`flex flex-col relative justify-center items-center`}
               style={{
                 color: "#405454",
                 fontSize: "28px",
@@ -96,62 +94,68 @@ const RandomImages = () => {
                 wordWrap: "break-word",
               }}
             >
-              <div className="flex item-center ">
-                <div className=" flex item-center gap-96">
+              <div className="h-[480px] w-[890px] flex flex-row justify-evenly ">
+                <div
+                  className={`${styles.randomGap} flex flex-row relative bottom-36 gap-96 `}
+                >
                   <div
                     className="flex flex-col items-center"
                     style={{
                       filter: "drop-shadow(-10px 19px 20px #000000)",
-                      bottom: "100px",
+
                       animation: "fly 5s linear infinite",
                       transition: "opacity 0.3s ease-in-out",
                     }}
                   >
                     <img
-                      className={`${styles.randomImage1} rounded-xl w-[252px] border h-[412px] overflow-hidden object-cover transform hover:-translate-y-2 transition duration-300`}
+                      className={`${styles.randomImage1} rounded-xl border border-gray-600 w-[252px] h-[412px] `}
                       alt=""
                       src={currentImages[0]}
                     />
-                    <b className="pt-7 text-black">LUXURIOUS</b>
+                    <b className={`${styles.textImage} pt-7 text-black`}>
+                      LUXURIOUS
+                    </b>
                   </div>
                   <div
                     className="flex flex-col items-center"
                     style={{
                       filter: "drop-shadow(10px 19px 20px #000000)",
-                      bottom: "100px",
+
                       animation: "fly 5s linear infinite",
                       transition: "opacity 0.3s ease-in-out",
                       animationDelay: "100ms",
                     }}
                   >
                     <img
-                      className={`${styles.randomImage1} rounded-xl border w-[252px] h-[412px] overflow-hidden object-cover transform hover:-translate-y-2 transition duration-300`}
+                      className={`${styles.randomImage1} rounded-xl border border-gray-600 w-[252px] h-[412px] `}
                       alt=""
                       src={currentImages[2]}
                     />
-                    <b className="pt-7 text-black">REVOLUTIONARY</b>
+                    <b className={`${styles.textImage} pt-7 text-black`}>
+                      REVOLUTIONARY
+                    </b>
                   </div>
                 </div>
               </div>
               <div
-                className="flex flex-col items-center"
+                className={`${styles.randomStyle} flex relative bottom-96 h-[480px] w-[890px] justify-center`}
                 style={{
                   filter: "drop-shadow(0px 19px 20px #000000)",
-                  paddingTop: "30%",
-                  marginLeft: "36%",
                   animation: "fly 5s linear infinite",
                   transition: "opacity 0.3s ease-in-out",
                   animationDelay: "200ms",
-                  position: "absolute",
-                  top: 0,
                 }}
               >
-                <img
-                  className={`${styles.randomImage} rounded-xl border border-gray-600 w-[252px] h-[412px] overflow-hidden object-cover transform hover:-translate-y-2 transition duration-300"`}
-                  alt=""
-                  src={currentImages[1]}
-                />
-                <b className="pt-7 text-black">EFFICIENT</b>
+                <div className={`flex flex-col items-center`}>
+                  <img
+                    className={`${styles.randomImage} rounded-xl border border-gray-600 w-[252px] h-[412px] `}
+                    alt=""
+                    src={currentImages[1]}
+                  />
+                  <b className={`${styles.textImage} pt-7 text-black`}>
+                    EFFICIENT
+                  </b>
+                </div>
               </div>
             </div>
           </div>
