@@ -31,3 +31,33 @@ body {
   background-color: #f0f0f0;
   margin-right: 4%;
 }
+@media (max-width: 920px) {
+  body {
+    background-color: #f0f0f0;
+    margin-right: -50%;
+  }
+}
+@media (max-width: 550px) {
+  body {
+    background-color: #f0f0f0;
+    margin-right: -80%;
+  }
+}
+@media (max-width: 450px) {
+  body {
+    background-color: #f0f0f0;
+    margin-right: -104%;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    background-color: #f0f0f0;
+    margin-right: -130%;
+  }
+}
+@media (max-width: 340px) {
+  body {
+    background-color: #f0f0f0;
+    margin-right: -130%;
+  }
+}

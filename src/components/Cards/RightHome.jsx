@@ -11,7 +11,7 @@ export default function RightCard({
   description,
 }) {
   return (
-    <div className="flex-auto flex-col z-50 transition duration-300 ease-in-out hover:scale-110">
+    <div className="flex-auto flex-col z-20 transition duration-300 ease-in-out hover:scale-110">
       <Link href={`/products/${pid}`}>
         <div
           style={{
