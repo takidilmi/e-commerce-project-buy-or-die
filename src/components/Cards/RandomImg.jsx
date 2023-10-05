@@ -47,7 +47,7 @@ const RandomImages = () => {
     <div className="flex justify-center mt-20">
       <div
         style={{
-          border: "",
+          zIndex: -500,
           color: "#405454",
           fontSize: "36px",
           fontFamily: "Satoshi",
