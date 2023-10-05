@@ -38,7 +38,7 @@ export default function Product({ data, data1, data2, data3, data4 }) {
       >
         <div className="flex flex-row pt-8 justify-center items-center gap-2">
           {/* the 3 side pics  */}
-          <div className="flex gap-5 flex-col">
+          <div className="flex gap-5 md:pb-0 pb-[500px] md:mr-0 mr-[-160px] flex-col">
             <img
               style={{
                 width: "152px",
@@ -205,7 +205,7 @@ export default function Product({ data, data1, data2, data3, data4 }) {
             You may like!
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center">
             <Link href={`/products/${data1.id}`} className="w-full">
               <ItemCard
                 thumbnail={data1.thumbnail}

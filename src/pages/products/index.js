@@ -274,7 +274,7 @@ const Products = ({ produ }) => {
             <div class=" p-1">
               <div class="col-span-2">
                 <div className="mx-auto">
-                  <div className="ml-[-70px] grid 2xl:grid-cols-5 md:grid-cols-2 xl:grid-cols-3 lg:grid-cols-2 gap-4 justify-center items-center">
+                  <div className="ml-[70px] md:ml-[-250px] lg:ml-[-70px] grid grid-cols-2 2xl:grid-cols-5 md:grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 lg:grid-cols-2 gap-4 justify-center items-center">
                     {displayedProducts.map((prods) => {
                       return (
                         <div key={prods.id}>
