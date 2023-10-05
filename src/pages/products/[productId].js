@@ -38,7 +38,7 @@ export default function Product({ data, data1, data2, data3, data4 }) {
       >
         <div className="flex flex-row pt-8 justify-center items-center gap-2">
           {/* the 3 side pics  */}
-          <div className="flex gap-5 md:pb-0 pb-[500px] md:mr-0 mr-[-160px] flex-col">
+          <div className="flex gap-5 md:pb-0 sm:pb-[500px] pb-[540px] md:mr-0 flex-col">
             <img
               style={{
                 width: "152px",
